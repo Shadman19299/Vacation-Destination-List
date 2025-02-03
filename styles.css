@@ -1,0 +1,199 @@
+/* **
+ * Author: Shadman Rabbi
+ * Date: 2022-05-12
+ * Title: Dynamic Vacation Destinations List */
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  padding: auto;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #fffdd0;
+  color: #5b6d92;
+}
+
+header {
+  padding: 50px;
+  background-color: #464646;
+  color: #fffdd0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#body_header {
+  font-size: 20px;
+}
+main {
+  background-color: rgb(202, 234, 245);
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+main form {
+  width: 25%;
+  padding: 2%;
+  border-style: hidden solid hidden hidden;
+}
+
+main article {
+  width: 30%;
+  padding: 2%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 1em;
+}
+
+#dest_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+label {
+  margin-top: 2em;
+  display: block;
+  margin-bottom: 0.5em;
+  color: black;
+  font-size: 20px;
+}
+
+input,
+textarea,
+#destination_detail_form,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid #464646;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#add_2_list_button {
+  background-color: #464646;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add_2_list_button:hover {
+  background-color: #5de029;
+}
+
+#remove_button {
+  background-color: #464646;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#remove_button:hover {
+  background-color: firebrick;
+}
+.article_card {
+  padding: 20px;
+  background-color: #f0cfba;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article_card img {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+#destination_list_section {
+  width: 25%;
+  position: sticky;
+  top: 20px;
+  height: 60vh; /* Changed from 90vh to 60vh */
+  margin: 0;
+  border: 1px solid #0b0029;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #8aaf75;
+  position: relative;
+  padding-bottom: 50px; /* Keep space for the Remove All button */
+}
+
+#destination_list_container {
+  height: calc(40vh); /* Changed from 90vh - 100px to 40vh */
+  overflow-y: auto;
+  border: 1px solid #8aaf75;
+  padding: 10px;
+  margin-bottom: 10px; /* Add some space between container and button */
+}
+
+/* Style for individual items in the list */
+.destination-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.destination-item:hover {
+  background-color: #f0cfba;
+  transform: translateX(5px);
+}
+
+#list_header {
+  color: #0b0029;
+}
+
+/*Style for Remove All Button*/
+
+#destination_list_section {
+  position: relative;
+  padding-bottom: 50px; /* Make space for the button */
+}
+
+.remove-all-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 20px); /* 10px padding on each side */
+  padding: 10px;
+  background-color: #464646;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-all-btn:hover {
+  background-color: rgb(255, 20, 20);
+}

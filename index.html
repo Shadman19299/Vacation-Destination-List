@@ -1,0 +1,101 @@
+<!-- /***
+ * Author: Shadman Rabbi
+ * Date: 2022-05-12
+ * Title: Dynamic Vacation Destinations List
+ */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Destinations WishList</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Vacation Destinations WishList</h1>
+      <p id="body_header">
+        Found exciting places to visit on your next vacation? Use the form below
+        to add them to your wish list.
+      </p>
+    </header>
+
+    <main>
+      <form id="Destinations_detail_form">
+        <label for="name">Destination Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Give the Destination name"
+          required
+        />
+
+        <label for="location"> Destination Location </label>
+        <input
+          type="text"
+          id="location"
+          placeholder="Where the Destination is located"
+          required
+        />
+
+        <label for="photo"> Photo</label>
+        <input type="url" id="photo" placeholder="Put the url for photo" />
+
+        <label for="description">Describe Destination</label>
+        <textarea
+          id="description"
+          name="Description"
+          placeholder=" Provide the Description"
+        ></textarea>
+        <label for="travelDate">Desired Travel Time</label>
+        <input type="datetime-local" id="travelDate" />
+
+        <button id="add_2_list_button" type="submit">Add to List</button>
+      </form>
+
+      <!-- Article for holding the most recent wish -->
+      <article>
+        <h2 id="dest_title">Your WishList is Empty</h2>
+
+        <div id="destinations_container">
+          <!-- content by js -->
+          <!-- <div class="card">
+            <img src="images/signpost.jpg" alt="signpost image" />
+            <div class="card-body">
+              <h3>Destination name</h3>
+              <h4>Destination location</h4>
+              <p>Travel Date</p>
+              <p class="card-text">Destination Description</p>
+              <button id="remove_button">Remove</button>
+            </div>
+          </div> -->
+          <!-- card div end -->
+        </div>
+      </article>
+
+      <!-- Navigation section for the JS -->
+      <section id="destination_list_section">
+        <h2 id="list_header">Destinations List</h2>
+        <div id="destination_list_container">
+          <!--items (will be populated by JavaScript) -->
+          <div class="destination-item">
+            <h4 id="listDestname">Destination Name</h4>
+            <p id="listDestLocation">Location</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
