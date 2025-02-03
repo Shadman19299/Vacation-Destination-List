@@ -1,8 +1,3 @@
-# CC-1.0-Vacation-Destination-App
-
-This is an individual coding exercise. Follow the Canvas instruction - [CC 1.0 - Superior LSD Vacation Destination App](https://awstechu.instructure.com/courses/778/modules/items/142578)
-
-
 Create a Travel Destination Wish List: 
 
 1. User can create a Travel Destination List by putting the destination name, location, photourl of the travel destination, description and the date they wish to travel to that destination. 
